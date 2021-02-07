@@ -1,6 +1,7 @@
 import React from "react";
 import Affair from "./Affair";
 import {AffairType, FilterType} from "./HW2";
+import s from './Affairs.module.css'
 
 type AffairsPropsType = { // need to fix any
     data: AffairType[]
@@ -9,7 +10,6 @@ type AffairsPropsType = { // need to fix any
 }
 
 const Affairs = (props: AffairsPropsType) => {
-    debugger;
     const mappedAffairs = props.data.map((a: AffairType) => (
         <Affair // should work
             key={a._id} // кеи ОБЯЗАТЕЛЬНЫ в 99% - так что лучше их писать всегда при создании компонент в мапе
@@ -32,15 +32,17 @@ const Affairs = (props: AffairsPropsType) => {
     };
 
     return (
-        <div>
-
+        <>
+        <div className={s.app__inner}>
             {mappedAffairs}
-
-            <button onClick={setAll}>All</button>
-            <button onClick={setHigh}>High</button>
-            <button onClick={setMiddle}>Middle</button>
-            <button onClick={setLow}>Low</button>
         </div>
+        <div className={s.task__filters}>
+        <button className={s.task__filter__all} onClick={setAll}>All</button>
+        <button className={s.task__filter__high} onClick={setHigh}>High</button>
+        <button className={s.task__filter__middle} onClick={setMiddle}>Middle</button>
+        <button className={s.task__filter__low} onClick={setLow}>Low</button>
+    </div>
+    </>
     );
 }
 

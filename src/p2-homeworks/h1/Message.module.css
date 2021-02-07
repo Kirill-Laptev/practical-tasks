@@ -17,6 +17,7 @@
     flex-direction: column;
     padding-left: 10px;
     margin-left: 15px;
+    padding-top: 7px;
 }
 .message__body:before{
     content: ' '; 

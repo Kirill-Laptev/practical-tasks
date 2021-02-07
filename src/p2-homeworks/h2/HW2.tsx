@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import Affairs from "./Affairs";
+import s from './Affairs.module.css'
 
 // types
 export type AffairPriorityType = 'low' | 'middle' | 'high'; // need to fix any
@@ -29,30 +30,38 @@ export const deleteAffair = (affairs: Array<AffairType>, _id: number): AffairTyp
 }
 
 function HW2() {
-    const [affairs, setAffairs] = useState<AffairType[]>(defaultAffairs); // need to fix any
-    const [filter, setFilter] = useState<FilterType>("all");
+  const [affairs, setAffairs] = useState<AffairType[]>(defaultAffairs); // need to fix any
+  const [filter, setFilter] = useState<FilterType>("all");
 
-    const filteredAffairs = filterAffairs(affairs, filter);
-    const deleteAffairCallback = (_id: number) => setAffairs(deleteAffair(affairs, _id)); // need to fix any
+  const filteredAffairs = filterAffairs(affairs, filter);
+  const deleteAffairCallback = (_id: number) =>
+    setAffairs(deleteAffair(affairs, _id)); // need to fix any
 
-    return (
-        <div>
-            <hr/>
-            homeworks 2
-
-            {/*should work (должно работать)*/}
+  return (
+    <div>
+      homeworks 2
+      {/*should work (должно работать)*/}
+      <div>
+        <div className={s.wrapper}>
+          <div className={s.app__wrapper}>
+            <div className={s.maintitle__display}>
+              <span className={s.maintitle__text}>List of affairs</span>
+            </div>
             <Affairs
-                data={filteredAffairs}
-                setFilter={setFilter}
-                deleteAffairCallback={deleteAffairCallback}
+              data={filteredAffairs}
+              setFilter={setFilter}
+              deleteAffairCallback={deleteAffairCallback}
             />
-
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeAffairs/>*/}
-            <hr/>
+          </div>
         </div>
-    );
+      </div>
+
+      <hr />
+      {/*для личного творчества, могу проверить*/}
+      {/*<AlternativeAffairs/>*/}
+      <hr />
+    </div>
+  );
 }
 
 export default HW2;
