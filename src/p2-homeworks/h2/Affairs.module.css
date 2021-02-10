@@ -23,8 +23,8 @@
 .maintitle__text{
     font-size: 28px;
     font-weight: 700;
-    color: rgb(265, 265, 265);
-    border-bottom: 2px solid rgb(265, 265, 265);
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
 }
 .app__inner{
     display: flex;
@@ -47,7 +47,7 @@
     cursor: pointer;
     width: 25px;
     height: 22px;
-    fill: rgb(265, 265, 265);
+    fill: rgb(255, 255, 255);
     margin: 0 0 0 0;
     margin: 3.2px 0 0 0;
 }
@@ -56,7 +56,7 @@
     width: 200px;
     height: 30px;
     border-radius: 5px;
-    background: rgb(265, 265, 265);
+    background: rgb(255, 255, 255);
 }
 .task__text{
     font-size: 17px;
@@ -71,7 +71,7 @@
 
 .task__filters button{
     padding: 4px 17px;
-    color: rgb(265, 265, 265);
+    color: rgb(255, 255, 255);
     border-radius: 5px;
     font-weight: 200;
     font-size: 19px;

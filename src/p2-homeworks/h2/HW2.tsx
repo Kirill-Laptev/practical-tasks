@@ -56,7 +56,7 @@ function HW2() {
         </div>
       </div>
 
-      <hr />
+      
       {/*для личного творчества, могу проверить*/}
       {/*<AlternativeAffairs/>*/}
       <hr />
