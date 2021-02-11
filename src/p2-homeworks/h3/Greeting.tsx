@@ -29,7 +29,7 @@ const Greeting: React.FC<GreetingPropsType> = (
                 onChange={setNameCallback} 
                 onClick={onInputClick}
                 onBlur={onBlurHandler}
-                className={`${inputClass} + ' ' ${activeClass}`}/>
+                className={`${s.app__input} + ' ' + ${inputClass} + ' ' ${activeClass}`}/>
                 <div className={s.error__message}><span>{error}</span></div>
             </div>
             <div><button onClick={addUser}>add</button></div>
