@@ -1,0 +1,68 @@
+.header{
+    padding: 25px 0 25px 20px;
+    background-color: #1e0bd0;
+}
+
+.header__menu{
+    width: 320px;
+    height: 500px;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    z-index: 2;
+    background-color: #1e0bd0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__menu a{
+    color: #ffffff;
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.header__burger{
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 3;
+}
+.header__burger:before, 
+.header__burger:after{		/* Стилизуем наши линии с помошью before и after */
+    content: '';
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease 0s;     /* Анимация при нажатии на бургер */
+}
+.header__burger:before{
+    top: 0;               /* Верхняя полоса сверху */
+}
+.header__burger:after{
+    bottom: 0;            /* Другая полоса снизу */
+}
+.header__burger span{
+    position: absolute;
+    background-color: black;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    transition: all 0.3s ease 0s;     /* Анимация при нажатии на бургер */
+}
+.header__burger.active:before {			
+    transform: rotate(45deg);			/* Градус верхней палочки крестика */
+    top: 9px;
+}  
+.header__burger.active:after {			
+    transform: rotate(-45deg);          /* Градус нижней палочки крестика */
+    bottom: 9px; 
+}
+.header__burger.active span{
+    transform: scale(0); 				/* Убираем палочку посередине из бургера при нажатии */
+}
