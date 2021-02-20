@@ -1,0 +1,52 @@
+.app__wrapper{
+    padding: 30px;;
+}
+.app_inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app__text{
+    display: block;
+    width: 270px;
+    height: 50px;
+    padding-left: 10px;
+    background-color: rgb(232,232,232);
+    border-radius: 5px 5px 0 0;
+    font-size: 20px;
+    border-bottom: 1.8px solid rgb(140,140,140);
+    padding-top: 15px;
+}
+
+.app__buttons{
+    display: flex;
+    margin-top: 10px;
+    margin-right: -6px;
+}
+
+.app__btn_save{
+    padding: 11px 30px;
+    border-radius: 5px;
+    background-color: #f7b632;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    margin-top: 5px;
+    margin-bottom: 7px;
+    
+}
+.app__btn_restore{
+    padding: 11px 30px;
+    border-radius: 5px;
+    background-color: #f7b632;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    margin-top: 5px;
+    margin-bottom: 7px;
+    margin-left: 5px;
+}
+
+
+

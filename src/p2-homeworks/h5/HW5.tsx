@@ -3,6 +3,7 @@ import Header from "./Header";
 import Routes from "./Routes";
 import { HashRouter } from "react-router-dom";
 import s from './Header.module.css'
+import { CSSTransition } from "react-transition-group";
 
 function HW5() {
 
@@ -20,7 +21,10 @@ function HW5() {
                 onClick={() => setCollapsed(!isCollapsed)}>
                     <span></span>
                 </div>
-                {isCollapsed && <Header/>}
+                {/* <CSSTransition in={isCollapsed} className="animation" timeout={500} unmountOnExit>
+                    <Header />
+                </CSSTransition> */}
+                {isCollapsed && <Header />}
             </div>
             
 

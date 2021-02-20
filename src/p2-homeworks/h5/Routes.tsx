@@ -21,7 +21,7 @@ function Routes() {
             {/*exact нужен чтоб указать полное совпадение (что после "/" ничего не будет)*/}
             <Route path={"/"} exact render={() => <Redirect to={PATH.PRE_JUNIOR}/>}/>
 
-            <Route path={PATH.PRE_JUNIOR} render={() => <PreJunior/>}/>
+            <Route path={PATH.PRE_JUNIOR} component={PreJunior}/>
                 {/* add routes */}
             <Route path={PATH.JUNIOR} component={Junior}/>
             <Route path={PATH.JUNIOR_PLUS} component={JuniorPlus} />

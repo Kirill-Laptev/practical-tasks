@@ -1,6 +1,7 @@
 .message__inner{
     display: flex;
     align-items: flex-start;
+    justify-content: center;
 }
 .message__img{
     margin-top: 13px;
@@ -35,12 +36,16 @@
 }
 .message__username{
     font-size: 20px;
-    color: rgb(217, 126, 208);
+    font-weight: 600;
+    color: #ffffff;
     padding-top: 10px;
 }
 .message__text{
-    font-size: 25px;
+    font-size: 23px;
     padding-right: 15px;
+    padding-top: 3px;
+    color: #ffffff;
+    font-weight: 300;
 }
 .message__time{
     align-self: flex-end;
