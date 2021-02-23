@@ -1,0 +1,25 @@
+.select select{
+    width: 300px;
+    height: 50px;
+    font-weight: 700;
+    font-family: "Helvetica";
+    padding-left: 20px;
+    display: block;
+    appearance: none;
+    background-color: #495762;
+    color: white;
+    font-size: 20px;
+    text-align-last: center; 
+    text-align: center; 
+    margin-bottom: 10px; 
+}
+
+.select{
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+}
