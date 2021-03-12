@@ -26,7 +26,6 @@
 }
 
 .app__btn_save{
-    padding: 11px 30px;
     border-radius: 5px;
     background-color: #f7b632;
     font-size: 20px;
@@ -37,7 +36,7 @@
     
 }
 .app__btn_restore{
-    padding: 11px 30px;
+    padding-left: 3px;
     border-radius: 5px;
     background-color: #f7b632;
     font-size: 20px;
