@@ -12,6 +12,7 @@
 }
 .message__body{
     position: relative;
+    z-index: -1;
     background-color: rgba(125, 125, 125);
     border-radius: 5px;
     display: flex;

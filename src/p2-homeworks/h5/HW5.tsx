@@ -11,6 +11,9 @@ function HW5() {
 
     const active = isCollapsed ? s.active : ''
 
+    const onCategoryClick = () => {
+        setCollapsed(false)
+    }
 
     return (
         <div>
@@ -24,7 +27,7 @@ function HW5() {
                 {/* <CSSTransition in={isCollapsed} className="animation" timeout={500} unmountOnExit>
                     <Header />
                 </CSSTransition> */}
-                {isCollapsed && <Header />}
+                {isCollapsed && <Header onCategoryClick={onCategoryClick} />}
             </div>
             
 

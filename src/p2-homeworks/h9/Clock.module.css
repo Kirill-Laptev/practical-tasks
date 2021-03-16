@@ -6,6 +6,7 @@
 }
 .clock__body{
     position: relative;
+    z-index: -1;
     width: 300px;
     height: 300px;
     border-radius: 50%;
