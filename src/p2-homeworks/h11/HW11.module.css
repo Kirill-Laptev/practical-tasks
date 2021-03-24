@@ -1,0 +1,30 @@
+.app__slider{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+.slider__base{
+    display: flex;
+    position: relative;
+}
+.base__value {
+    position: absolute;
+    top: 2px;
+    left: -22px;
+}
+.slider__doublerange{
+    display: flex;
+    position: relative;
+}
+
+.doublerange__min{
+    position: absolute;
+    top: 13px;
+    left: -35px;
+}
+.doublerange__max{
+    position: absolute;
+    top: 13px;
+    right: -45px;
+}

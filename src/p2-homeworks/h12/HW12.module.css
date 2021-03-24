@@ -1,3 +1,20 @@
+.app__theme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+.baseText {
+    border: 3px solid black;
+    width: 600px;
+    padding: 15px;
+    font-size: 22px;;
+}
+.select__optional {
+    color: black;
+    font-size: 30px;
+    background-color: teal;
+}
 .dark {
     background: dimgrey;
 }
@@ -14,10 +31,10 @@
     color: aqua;
 }
 
-.some {
-    background: lightgreen;
+.purple {
+    background: darkslateblue;
 }
 
-.some-text {
-    color: darkslateblue;
+.purple-text {
+    color: lightgreen;
 }
